@@ -141,3 +141,5 @@ Here are just a few random ideas for ways you could extend the program without *
     You could add some way to save typing test results to a file, and/or somehow connect this with the stats class idea (if you have extra time).
 - Moving Back a Word:
     Though this probably isn't as good an option as the other ones, if you feel confident that you understand the program well, you could try to implement being able to move back a word. Currently, if you backspace all the letters in a word, you can't go back to change something in the word before it. You could try implementing this, but it'd be difficult, and you'd need decent familiarity with the code, so this isn't as good of an option.
+- Fix End of Line Bug:
+    There's bug where you can sometimes type past the end of the line, if you somehow figure out what the bug is (it's something with detecting when to move to the next line) then feel free to fix it, but it's not really a big change
