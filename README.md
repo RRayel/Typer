@@ -8,7 +8,7 @@ Before going into how it works, here's how to run the program, To use the class 
 
 You will also need your code editor configured to have the `lib` directory in the classpath, or just add the `jline-xxx.jar` file to be accessible. This library is explained in the [`JLine`](#JLine) section.
 
-You can just run Typer.java normally after that, but you need to make sure you have a terminal that supports it. If you're on a mac, that should be fine, but if you're on Windows, you will need to use [Windows Terminal](https://github.com/microsoft/terminal) ([Microsoft Store Link](https://aka.ms/terminal)), or any other terminal which fully supports ANSI escape codes (most do, besides the built-in Windows ones).
+You can just run Typer.java normally after that, but you need to make sure you have a terminal that supports it. If you're on a mac, that should be fine, but if you're on Windows, you will need to use [Windows Terminal](https://github.com/microsoft/terminal) ([Microsoft Store Link](https://aka.ms/terminal)), or any other terminal which fully supports ANSI escape codes (most do, besides the built-in Windows ones). ANSI escape codes are what tell the terminal what color to be (and other formatting things). In the code, you'll see a lot of `\033[`, that's because ANSI escape codes always start with that, then have some identifier information.
 
 ## Code Layout
 
