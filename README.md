@@ -43,7 +43,7 @@ The code of `Typer` is split into two files: `Typer.java` and `Utils.java`. The 
 
 Here's a tree view:
 
-```none
+```tree
 ├── Typer.java
 │   ├── Typer
 │   ├── genWords
