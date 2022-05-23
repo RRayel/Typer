@@ -39,7 +39,7 @@ You can just run Typer.java normally after that, but you need to make sure you h
 
 ## Code Layout
 
-The code of `Typer` is split into two files: `Typer.java` and `Utils.java`. The javadocs for individual fucntions are all in the files, but I'll still put a short overview here. You don't need to read all of this, it's just good reference. There are also some other files, 
+The code of `Typer` is split into two files: `Typer.java` and `Utils.java`. The javadocs for individual fucntions are all in the files, but I'll still put a short overview here. You don't need to read all of this, it's just good reference. There are also some other files, which are explained as well.
 
 Here's a tree view:
 
