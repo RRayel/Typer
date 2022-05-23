@@ -2,7 +2,34 @@
 
 `Typer` is a typing test that runs in the terminal. This document gives some information on what the functions are, and how the program works.
 
-## Running the program
+## Table of Contents
+
+- [`Typer`](#typer)
+  - [Table of Contents](#table-of-contents)
+  - [Running the Program](#running-the-program)
+  - [Code Layout](#code-layout)
+    - [`Typer.java`](#typerjava)
+      - [Constructor](#constructor)
+      - [`genWords`](#genwords)
+      - [`start`](#start)
+      - [`endGame`](#endgame)
+      - [`getColor`](#getcolor)
+    - [`Utils.java`](#utilsjava)
+      - [`getWordlist`](#getwordlist)
+      - [`wrapWords`](#wrapwords)
+      - [`getChar`](#getchar)
+      - [`colorToAnsi`](#colortoansi)
+      - [`hexToAnsi`](#hextoansi)
+      - [`centerHorizSpacing`](#centerhorizspacing)
+      - [`centerVertSpacing`](#centervertspacing)
+      - [`centerText`](#centertext)
+      - [`getRandom`](#getrandom)
+    - [Wordlists](#wordlists)
+    - [JLine](#jline)
+  - [Process Walkthrough](#process-walkthrough)
+  - [Extension Ideas](#extension-ideas)
+
+## Running the Program
 
 Before going into how it works, here's how to run the program, To use the class (though there's already a `main` function in `Typer.java`), you can just create a `Typer` object and call the `start()` method on it, see the constructor javadocs for more info on how to do that.
 
@@ -12,7 +39,7 @@ You can just run Typer.java normally after that, but you need to make sure you h
 
 ## Code Layout
 
-The code of `Typer` is split into two files: `Typer.java` and `Utils.java`. The javadocs for individual fucntions are all in the files, but I'll still put a short overview here. You don't need to read all of this, it's just good reference.
+The code of `Typer` is split into two files: `Typer.java` and `Utils.java`. The javadocs for individual fucntions are all in the files, but I'll still put a short overview here. You don't need to read all of this, it's just good reference. There are also some other files, 
 
 Here's a tree view:
 
