@@ -8,12 +8,8 @@ public class Typer {
 
     private ArrayList<String> wordlist;
     private int wordcount;
-    private String[] colors = {
-        "#E6DB74", // untyped text color
-        "#E2E2DC", // typed text color
-        "#F92672", // incorrect text color
-        "#272822"  // background color
-    };
+    private Theme pallet = new Theme();
+    private String[] colors = pallet.getTheme();
     private ArrayList<String> usedWords; // the list of words, randomly picked from the wordlist, that are being
                                          // used in this game
     private String[] lines; // the lines of words that are printed to the terminal
@@ -39,9 +35,12 @@ public class Typer {
         this.wordlist = wordlist;
         this.wordcount = wordcount;
 
-        this.term = TerminalBuilder.terminal();
-        this.termWidth = term.getWidth();
+         this.term = TerminalBuilder.terminal();
+        //this.term = TerminalBuilder.builder().system(false).streams(System.in, System.out).build();
+         this.termWidth = term.getWidth();
         this.termHeight = term.getHeight();
+        //this.termWidth = 179;
+       // this.termHeight = 11;
 
         // This hooks into the program exit, and resets the terminal to normal
         Runtime.getRuntime().addShutdownHook(new Thread() {
@@ -314,15 +313,8 @@ public class Typer {
 
         Typer t = new Typer();
         t.start();
+        System.out.println("hey");
 
     }
 
 }
-
-
-
-
-
-
-
-
